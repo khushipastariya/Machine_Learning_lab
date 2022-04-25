@@ -1,0 +1,100 @@
+# Machine_Learning_lab
+import numpy as np
+a=np.array([[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]]])
+print(a)
+print(a.shape)
+print(a.ndim)
+print(a.size)
+[[[1 2 3]
+  [4 5 6]]
+
+ [[1 2 3]
+  [4 5 6]]
+
+ [[1 2 3]
+  [4 5 6]]]
+(3, 2, 3)
+3
+18
+arr=np.arange(24).reshape(6,2,2)
+print(arr)
+[[[ 0  1]
+  [ 2  3]]
+
+ [[ 4  5]
+  [ 6  7]]
+
+ [[ 8  9]
+  [10 11]]
+
+ [[12 13]
+  [14 15]]
+
+ [[16 17]
+  [18 19]]
+
+ [[20 21]
+  [22 23]]]
+arr.resize(12,2)
+print(arr)
+[[ 0  1]
+ [ 2  3]
+ [ 4  5]
+ [ 6  7]
+ [ 8  9]
+ [10 11]
+ [12 13]
+ [14 15]
+ [16 17]
+ [18 19]
+ [20 21]
+ [22 23]]
+a=np.array([[[1,2,3],[4,5,6j]],[[1,2,3],[4,5,6]],[[1,2,3],[4,5,6]]],dtype="complex")
+print(a)
+print(a.shape)
+print(a.ndim)
+print(a.size)
+print(a.dtype)
+[[[1.+0.j 2.+0.j 3.+0.j]
+  [4.+0.j 5.+0.j 0.+6.j]]
+
+ [[1.+0.j 2.+0.j 3.+0.j]
+  [4.+0.j 5.+0.j 6.+0.j]]
+
+ [[1.+0.j 2.+0.j 3.+0.j]
+  [4.+0.j 5.+0.j 6.+0.j]]]
+(3, 2, 3)
+3
+18
+complex128
+# e=np.empty((2,3))
+# print(e)
+
+e=np.ones((2,3),dtype=np.int64)
+print(e.size)
+print(e.shape)
+print(e)
+e
+6
+(2, 3)
+[[1 1 1]
+ [1 1 1]]
+array([[1, 1, 1],
+       [1, 1, 1]])
+print(np.linspace(3,4,2))
+p=e.flatten()
+print(p)
+print(np.arange(0,60,10).reshape(2,3))
+
+m=np.random.random((2,3))
+print(m)
+print(np.zeros((2,3)))
+[3. 4.]
+<module 'numpy.random' from '/usr/local/lib/python3.7/dist-packages/numpy/random/__init__.py'>
+[1 1 1 1 1 1]
+[[ 0 10 20]
+ [30 40 50]]
+[[0.89502996 0.2875526  0.00476501]
+ [0.1660183  0.98434288 0.43500762]]
+[[0. 0. 0.]
+ [0. 0. 0.]]
